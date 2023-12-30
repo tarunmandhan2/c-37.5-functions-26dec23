@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>c-37.5 functions 26dec23</title>
+    <style>
+      body {
+        background-color: #efefefda;
+        padding-bottom: 14%;
+      }
+      .flex {
+        display: flex;
+        align-items: center;
+      }
+      .justify-center {
+        justify-content: center;
+      }
+      h1 {
+        color: #6001d5;
+        background-color: #00000020;
+        padding: 5px 14px;
+        border-radius: 5px;
+      }
+      h2 {
+        color: #ff0000;
+      }
+      h3 {
+        margin-right: 68px;
+      }
+      hr {
+        margin-top: 68px;
+        border: 2px dashed #ff000077;
+      }
+      input {
+        margin-right: 23px;
+        height: 25px;
+        width: 104px;
+        font-weight: 500;
+        padding: 2px 10px;
+        box-shadow: inset 2px 2px 2px 0px #ffffff80, 7px 7px 20px 0px #0000001a,
+          4px 4px 5px 0px #0000001a;
+        border: none;
+        border-radius: 5px;
+      }
+      input[type="number"]:focus-visible {
+        background-color: #493f3fb6;
+        color: #fff;
+      }
+      .btn {
+        border: none;
+        color: #000;
+        width: 130px;
+        height: 40px;
+        border-radius: 5px;
+        padding: 10px 25px;
+        font-weight: 500;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        box-shadow: inset 2px 2px 2px 0px #ffffff80, 7px 7px 20px 0px #0000001a,
+          4px 4px 5px 0px #0000001a;
+        outline: none;
+        white-space: nowrap;
+      }
+      .btn:hover {
+        color: #000;
+        cursor: pointer;
+      }
+      .btn:active {
+        top: 2px;
+      }
+      .output {
+        width: auto;
+        font-size: 24px;
+        background-color: #0cdf753a;
+        color: #000000;
+        padding: 3px 23px;
+        margin-left: 14px;
+        border-radius: 8px;
+        white-space: nowrap;
+        text-align: center;
+      }
+    </style>
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="flex justify-center"><h1>Function Tasks</h1></div>
+    <div class="center">
+      <h2>Q 1. Add three Numbers</h2>
+      <div class="flex">
+        <label for="num1">First Number : &#160;</label>
+        <input type="number" name="first" id="num1" />
+
+        <label for="num2">Second Number : &#160;</label>
+        <input type="number" name="first" id="num2" />
+
+        <label for="num3">Third Number : &#160;</label>
+        <input type="number" name="first" id="num3" />
+
+        <button id="btn1" class="btn">Click</button>
+        <p id="output1" class="output">0</p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="center">
+      <h2>Q 2. Check mean of three numbers</h2>
+      <div class="flex">
+        <label for="mean1">First Number : &#160;</label>
+        <input type="number" name="mean1" id="mean1" />
+
+        <label for="mean2">Second Number : &#160;</label>
+        <input type="number" name="mean2" id="mean2" />
+
+        <label for="mean3">Third Number : &#160;</label>
+        <input type="number" name="mean3" id="mean3" />
+
+        <button id="btn2" class="btn">Click</button>
+        <p id="output2" class="output">0</p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="center">
+      <h2>Q 3. Calculate year from age</h2>
+      <div class="flex">
+        <label for="birthyear">Enter your age : &#160;</label>
+        <input type="number" name="birthyear" id="birthyear" value="23" />
+
+        <button id="btn3" class="btn">Click</button>
+        <p id="output3" class="output">--</p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="center">
+      <h2>Q 4. Check area of rectangle, square, circle.</h2>
+
+      <div class="flex">
+        <h3>i>> Check area of rectangle :-</h3>
+        <label for="width4">Enter Width : &#160;</label>
+        <input type="number" name="width4" id="width4" value="5" />
+        <label for="heigth4">Enter Height : &#160;</label>
+        <input type="number" name="heigth4" id="heigth4" value="6" />
+        <button id="btn4" class="btn">Calculate Area</button>
+        <p id="output4" class="output">--</p>
+      </div>
+
+      <div class="flex">
+        <h3>ii>> Check area of square :-</h3>
+        <label for="side4">Enter Side : &#160;</label>
+        <input type="number" name="side4" id="side4" value="5" />
+        <button id="btn4_2" class="btn">Calculate Area</button>
+        <p id="output4_2" class="output">--</p>
+      </div>
+
+      <div class="flex">
+        <h3>iii>> Check area of circle :-</h3>
+        <label for="radius4">Enter Radius : &#160;</label>
+        <input type="number" name="radius4" id="radius4" value="5" />
+        <button id="btn4_3" class="btn">Calculate Area</button>
+        <p id="output4_3" class="output">--</p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="center">
+      <h2>Q 5. Check perimeter of rectangle, square.</h2>
+
+      <div class="flex">
+        <h3>i>> Check Perimeter of rectangle :-</h3>
+        <label for="width5">Enter Width : &#160;</label>
+        <input type="number" name="width5" id="width5" value="8" />
+        <label for="heigth5">Enter Height : &#160;</label>
+        <input type="number" name="heigth5" id="heigth5" value="6" />
+        <button id="btn5" class="btn">Calc Perimeter</button>
+        <p id="output5" class="output">--</p>
+      </div>
+
+      <div class="flex">
+        <h3>ii>> Check Perimeter of square :-</h3>
+        <label for="side5">Enter Side : &#160;</label>
+        <input type="number" name="side5" id="side5" value="5" />
+        <button id="btn5_2" class="btn">Calc Perimeter</button>
+        <p id="output5_2" class="output">--</p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="center">
+      <h2>Q 6. Check BMI of user using weight and height.</h2>
+
+      <div class="flex">
+        <label for="weight6">Enter weight in (kg): &#160;</label>
+        <input type="number" name="weight6" id="weight6" value="72" />
+        <label for="heigth6">Enter Height in (cm): &#160;</label>
+        <input type="number" name="heigth6" id="heigth6" value="165" />
+        <button id="btn6" class="btn">Calculate BMI</button>
+        <p id="output6" class="output">--</p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="center">
+      <h2>Q 7. Convert Temperature in F to C. ( Fahrenheit to Celsius )</h2>
+      <div class="flex">
+        <label for="fahrenheit">Enter in Fahrenheit F: &#160;</label>
+        <input type="number" name="fahrenheit" id="fahrenheit" value="78" />
+        <button id="btn7" class="btn">Convert to °C</button>
+        <p id="output7" class="output">--</p>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="center">
+      <h2>Q 8. Convert miles to kms.</h2>
+      <div class="flex">
+        <label for="miles">Enter in miles : &#160;</label>
+        <input type="number" name="miles" id="miles" value="104" />
+        <button id="btn8" class="btn">Convert to Km</button>
+        <p id="output8" class="output">--</p>
+      </div>
+    </div>
+  </body>
+</html>
