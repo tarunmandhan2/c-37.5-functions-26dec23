@@ -87,7 +87,7 @@ document.querySelector("#btn4_2").addEventListener("click", () => {
 });
 document.querySelector("#btn4_3").addEventListener("click", () => {
   let radius4 = +document.querySelector("#radius4").value;
-  let area4_3 = Math.pow(radius4, 2) * Math.PI;
+  let area4_3 = (Math.pow(radius4, 2) * Math.PI).toFixed(2);
   document.querySelector("#output4_3").innerHTML = area4_3;
 });
 
