@@ -113,9 +113,10 @@ document.querySelector("#btn6").addEventListener("click", () => bmi());
 const bmi = () => {
   let weight6 = +document.querySelector("#weight6").value;
   let heigth6 = +document.querySelector("#heigth6").value;
-  heigth6 = heigth6 / 100; //! here convert cm to meter
+  heigth6 = heigth6 / 100; //* here convert cm to meter
   let bmi = (weight6 / heigth6 ** 2).toFixed(1);
-  document.querySelector("#output6").innerHTML = bmi;
+  document.querySelector("#output6").innerHTML = `BMI =${bmi} kg/m<sup>2</sup>`;
+  document.querySelector("#bmi_result").value = bmi;
 };
 
 //todo 7~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

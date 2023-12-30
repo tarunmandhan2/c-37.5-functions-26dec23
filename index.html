@@ -82,6 +82,9 @@
         white-space: nowrap;
         text-align: center;
       }
+      progress {
+        margin-left: 14px;
+      }
       @media (max-width: 980px) {
         .flex {
           flex-direction: column;
@@ -102,7 +105,6 @@
         }
       }
     </style>
-    <script src="script.js" defer></script>
   </head>
 
   <body>
@@ -192,7 +194,6 @@
 
     <div class="center">
       <h2>Q 5. Check perimeter of rectangle, square.</h2>
-
       <div class="flex">
         <h3>i>> Check Perimeter of rectangle :-</h3>
         <label for="width5">Enter Width : &#160;</label>
@@ -216,14 +217,14 @@
 
     <div class="center">
       <h2>Q 6. Check BMI of user using weight and height.</h2>
-
       <div class="flex">
         <label for="weight6">Enter weight in (kg): &#160;</label>
-        <input type="number" name="weight6" id="weight6" value="72" />
+        <input type="number" name="weight6" id="weight6" value="95" />
         <label for="heigth6">Enter Height in (cm): &#160;</label>
-        <input type="number" name="heigth6" id="heigth6" value="165" />
+        <input type="number" name="heigth6" id="heigth6" value="113" />
         <button id="btn6" class="btn">Calculate BMI</button>
         <p id="output6" class="output">--</p>
+        <progress id="bmi_result" value="0" max="100"></progress>
       </div>
     </div>
 
@@ -250,5 +251,6 @@
         <p id="output8" class="output">--</p>
       </div>
     </div>
+    <script defer src="script.js"></script>
   </body>
 </html>
